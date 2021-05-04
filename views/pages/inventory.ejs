@@ -1,0 +1,27 @@
+<%- include('../partials/head') -%> 
+
+<%- include('../partials/navigation-bar') -%> 
+
+    <div class="container-content-main">
+        <h1>Inventory</h1>
+        <p>Hello <%= name %>! See The Skate Shop's inventory below.</p>
+
+        <p>Click a product to see more details.</p>
+        <!-- Create a list below and display each product in the inventory using a for-of loop -->
+        <ul>
+            <% for (item of inventoryArray)  { %>
+                <li class="container-product">
+                    <a href="/product/<%= item._id %>">
+                        <%= item.name %>
+                    </a>
+                </li>
+            <% } %> 
+            </ul>
+        
+        <p>This is filler code to make the page look nice. Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus dolores, sunt, quasi consequatur alias accusantium assumenda ad rem laboriosam soluta maiores repudiandae, facilis eius hic debitis modi? Labore, ipsum temporibus.</p>
+        <p>This is filler code to make the page look nice. Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus dolores, sunt, quasi consequatur alias accusantium assumenda ad rem laboriosam soluta maiores repudiandae, facilis eius hic debitis modi? Labore, ipsum temporibus.</p>
+        <p>This is filler code to make the page look nice. Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus dolores, sunt, quasi consequatur alias accusantium assumenda ad rem laboriosam soluta maiores repudiandae, facilis eius hic debitis modi? Labore, ipsum temporibus.</p>
+        <p>This is filler code to make the page look nice. Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus dolores, sunt, quasi consequatur alias accusantium assumenda ad rem laboriosam soluta maiores repudiandae, facilis eius hic debitis modi? Labore, ipsum temporibus.</p>
+    </div>
+
+<%- include('../partials/footer') -%> 

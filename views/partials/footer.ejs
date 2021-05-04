@@ -1,0 +1,16 @@
+    <footer>
+        <div class="container-footer-links">
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <% if (loggedIn == true) { %>
+                <li><a href="/inventory">Inventory</a></li>
+            <% } %>
+        </div>
+        <p>
+            Copyright &#169; The Skate Shop 
+            <%= copyrightYear %>. 
+            All rights reserved. 
+        </p> 
+    </footer>
+</body>
+</html>
